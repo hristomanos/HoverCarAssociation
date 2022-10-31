@@ -1,29 +1,16 @@
-# README #
+# HoverCar Association #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+### Quick summary ###
+HoverCar Association is a 3D sports game inspired by the popular car football game Rocket league. 
 
-### What is this repository for? ###
+### What am I going to talk about ? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Gameplay mechanics
+* Game Modes
+* What I learned
 
-### How do I get set up? ###
+### Game modes ###
+The game consists of two game modes: 1 or 2 player.
+The 2 player mode is a local competitive multiplayer using a splitscreen. Both players handle their cars using the keyboard through split screen are trying to score as many goals as they can to the opposing team before the time runs out.
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+### What Did I learn? ###
