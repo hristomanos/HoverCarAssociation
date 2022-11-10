@@ -3,16 +3,16 @@
 ### Introduction ###
 HoverCar Association is a 3D sports game inspired by - my favourite car football game - Rocket league. It is a solo side project made in three weeks with Unity and C#. It was first used for experimentation of Unity's tools including scripting, physics, local multiplayer, importing 3D objects, UI, Text animation, Main and Pause menus and sound.
 
-### What am I going to talk about ? ###
+### Contents ###
 
 * Gameplay mechanics
 * Game Modes
 * What I learned
 
 ### Gameplay mechanics ###
-The most challenging part of the implementation was the car handling. I started by downloading Unity's Standard assets that included a car. The default car settings were set up to create a more realistic experience including a long list of variables that affect the car physics. Since Rocket league is more arcadey, it is very important for the player to maintain control of the car at all times, therefore a realistic car that would spin around at each turn would make the gameplay experience more frustrating.
+The most challenging part of the implementation was the car handling. I started by downloading Unity's Standard assets that included a car. The default car settings were set up to create a more realistic experience including a long list of variables that affected the car physics. Since Rocket league is more arcadey, it is very important for the player to maintain control of the car at all times, therefore a realistic car that would spin around at each turn would make the gameplay experience more frustrating. So in pursuit of making the car handling feel more arcadey, I made the practical choice of removing the default wheels altogether and just hover the cars above the ground. With this method I was able to control the car's velocity and torque. 
 
-So in the pursuit of making the car handling more arcadey, I made the practical choice of removing the default wheels altogether and just hover the cars above the ground. With this method I was able to control the car's velocity and torque. 
+To achieve this, I am performing a ground check through raycasting. Four rays that point towards the ground replace the wheels. If a certain
 
 ### Game modes ###
 The game consists of two game modes: 1 or 2 players.
