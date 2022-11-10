@@ -4,7 +4,7 @@
 HoverCar Association is a 3D sports game inspired by - my favourite car football game - Rocket league. It is a solo side project made in three weeks with Unity and C#. It was first used for experimentation of Unity's tools including scripting, physics, local multiplayer, importing 3D objects, UI, Text animation, Main and Pause menus and sound.
 
 
-## Demo clip ##
+## Gameplay video ##
 
 https://youtu.be/dJGiz-4q9ys
 
@@ -21,7 +21,7 @@ The most challenging part of the implementation was the car handling. I started 
 
 To achieve this, I am performing a ground check through raycasting. Four rays that point towards the ground replace the wheels. To keep the cars above the ground, an upward force is applied separately at each corner of the car. Each force is applied when the ground check returns true.
 
-Torque and velocity
+### Torque and velocity ###
 
 
 
