@@ -26,7 +26,7 @@ To accelerate the car, we can add a certain force to the car's rigidbody. To do 
   For example:
   `m_rigidBody.AddForce(transform.forward * m_speed);` 
 
-To turn the car, we can add torque to the car's  
+To turn the car, a similar method is applied by adding torque to the car  
 
 We firstly process input by utlilisng Unity's function Input.GetAxis() which returns a value of the virtual axis. The returned value is in the range -1...+1 and is also frame independent. This means that when no button has been pressed, the function returns 0.0f and when the "move forward/backward" button is pressed, the function returns 1.0f/-1.0f. Secondly, once we know 
 
