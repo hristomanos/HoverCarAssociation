@@ -21,7 +21,17 @@ The most challenging part of the implementation was the car handling. I started 
 
 To achieve this, I am performing a ground check through raycasting. Four rays that point towards the ground replace the wheels. To keep the cars above the ground, an upward force is applied separately at each corner of the car. Each force is applied when the ground check returns true.
 
-### Torque and velocity ###
+### Acceleration and turning ###
+To accelerate the car, we can add a certain force to the car's rigidbody. To do this, we will need a vector to dictate direction and a float value to determine the speed. The product of those two returns the car's velocity. 
+  For example:
+   * m_rigidBody.AddForce(transform.forward * m_Speed);
+
+To turn the car, we can add torque to the car's  
+
+We firstly process input by utlilisng Unity's function Input.GetAxis() which returns a value of the virtual axis. The returned value is in the range -1...+1 and is also frame independent. This means that when no button has been pressed, the function returns 0.0f and when the "move forward/backward" button is pressed, the function returns 1.0f/-1.0f. Secondly, once we know 
+
+### Boost ###
+
 
 
 
