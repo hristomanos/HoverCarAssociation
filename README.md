@@ -23,13 +23,10 @@ To achieve this, I am performing a ground check through raycasting. Four rays th
 
 ### Acceleration and turning ###
 To accelerate the car, we can add a certain force to the car's rigidbody. To do this, we will need a vector to dictate direction and a float value to determine the speed. The product of those two returns the car's velocity. 
-
-  For example:
-  `m_rigidBody.AddForce(transform.forward * m_speed);` 
+  For example: `m_rigidBody.AddForce(transform.forward * m_speed);` 
 
 To turn the car, a similar method to AddForce() is applied. This time, the force adds torque to the car's rigidbody. AddTorque() works by rotating the car around its Y axis, thus changing its direction.
-
-  * `m_rigidBody.AddTorque(Vector3.up * m_turnStrength);`
+ `m_rigidBody.AddTorque(Vector3.up * m_turnStrength);`
 
 ### Input ###
 
