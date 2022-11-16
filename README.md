@@ -22,20 +22,23 @@ The most challenging part of the implementation was the car handling. I started 
 To achieve this, I am performing a ground check through raycasting. Four rays that point towards the ground replace the wheels. To keep the cars above the ground, an upward force is applied separately at each corner of the car. Each force is applied when the ground check returns true.
 
 ### Acceleration and turning ###
-To accelerate the car, we can add a certain force to the car's rigidbody. To do this, we will need a vector to dictate direction and a float value to determine the speed. The product of those two returns the car's velocity. 
-  For example: `m_rigidBody.AddForce(transform.forward * m_speed);` 
+To accelerate the car, we can add a certain force to the car's rigidbody. To do this, we will need a vector to dictate direction and a float value to determine the speed. The product of those two returns the car's velocity. For example: `m_rigidBody.AddForce(transform.forward * m_speed);` 
 
-To turn the car, a similar method to AddForce() is applied. This time, the force adds torque to the car's rigidbody. AddTorque() works by rotating the car around its Y axis, thus changing its direction.
- `m_rigidBody.AddTorque(Vector3.up * m_turnStrength);`
+To turn the car, a similar method to AddForce() is applied. This time, the force adds torque to the car's rigidbody. AddTorque() works by rotating the car around its Y axis, thus changing its direction. For example: `m_rigidBody.AddTorque(Vector3.up * m_turnStrength);`
 
 ### Input ###
 
-We firstly process input by utlilisng Unity's function Input.GetAxis() which returns a value of the virtual axis. The returned value is in the range -1...+1 and is also frame independent. This means that when no button has been pressed, the function returns 0.0f and when the "move forward/backward" button is pressed, the function returns 1.0f/-1.0f. Secondly, once we know 
+Player input is processed by invoking Unity's function Input.GetAxis() which returns a value of the virtual axis. The returned value is in the range -1...+1 and foes realy on frame frequency. This means that when no button has been pressed, the function returns 0.0f and when the "move forward/backward" button is pressed, the function returns 1.0f/-1.0f respectively. Once we know which button was pressed, we can multiply it by the velocity to make the hoverring car move based on the player's input.\n 
+
+`m_body.AddForce(transform.forward * m_currThrust);`
 
 ### Boost ###
 
+Rocket league provides boost orbs that are placed close to the edges and corners of the pitch. The extra boost adds a tool that can be utlilised by players to chase or shoot the ball with more power. HoverCar association also uses orbs that when touched, they fill the car's tank and enables players to go faster with the press of a button.
 
+To implement this, a BoostManager script has been created. The script is responsible for handling the boost  
 
+` m_body.AddForce(transform.forward * m_currThrust * m_boost);`
 
 
 ## Game modes ##
