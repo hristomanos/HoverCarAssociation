@@ -28,7 +28,7 @@ To turn the car, a similar method to AddForce() is applied. This time, the force
 
 ### Input ###
 
-Player input is processed by invoking Unity's function Input.GetAxis() which returns a value of the virtual axis. The returned value is in the range -1...+1 and foes realy on frame frequency. This means that when no button has been pressed, the function returns 0.0f and when the "move forward/backward" button is pressed, the function returns 1.0f/-1.0f respectively. Once we know which button was pressed, we can multiply it by the velocity to make the hoverring car move based on the player's input.\n 
+Player input is processed by invoking Unity's function Input.GetAxis() which returns a value of the virtual axis. The returned value is in the range -1...+1 and foes realy on frame frequency. This means that when no button has been pressed, the function returns 0.0f and when the "move forward/backward" button is pressed, the function returns 1.0f/-1.0f respectively. Once we know which button was pressed, we can multiply it by the velocity to make the hoverring car move based on the player's input.
 
 `m_body.AddForce(transform.forward * m_currThrust);`
 
@@ -36,7 +36,7 @@ Player input is processed by invoking Unity's function Input.GetAxis() which ret
 
 Rocket league provides boost orbs that are placed close to the edges and corners of the pitch. The extra boost adds a tool that can be utlilised by players to chase or shoot the ball with more power. HoverCar association also uses orbs that when touched, they fill the car's tank and enables players to go faster with the press of a button.
 
-To implement this, a BoostManager script has been created. The script is responsible for handling the boost  
+To implement this, a BoostManager script has been created. The script is responsible for handling the boost 
 
 ` m_body.AddForce(transform.forward * m_currThrust * m_boost);`
 
