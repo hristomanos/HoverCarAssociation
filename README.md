@@ -20,6 +20,8 @@ The most challenging part of the implementation was the car handling. I started 
 
 To achieve this, I am performing a ground check through raycasting. Four rays that point towards the ground replace the wheels. To keep the cars above the ground, an upward force is applied separately at each corner of the car. Each force is applied when the ground check returns true.
 
+![screenshot][HoverCar.png]
+
 ### Acceleration and turning ###
 To accelerate the car, we can add a certain force to the car's rigidbody. To do this, we will need a vector to dictate direction and a float value to determine the speed. The product of those two returns the car's velocity. For example: `m_rigidBody.AddForce(transform.forward * m_speed);` 
 
