@@ -12,7 +12,6 @@ https://youtu.be/dJGiz-4q9ys
 
 * Gameplay mechanics
 * Game Modes
-* What I learned
 
 ## Gameplay mechanics ##
 
@@ -34,9 +33,11 @@ Player input is processed by invoking Unity's function Input.GetAxis() which ret
 
 ### Boost ###
 
-Rocket league provides boost orbs that are placed close to the edges and corners of the pitch. The extra boost adds a tool that can be utlilised by players to chase or shoot the ball with more power. HoverCar association also uses orbs that when touched, they fill the car's tank and enables players to go faster with the press of a button.
+Rocket league places orbs that fill the cars' boost tank close to the edges and corners of the pitch. The extra boost adds a tool that can be utlilised by players to chase or shoot the ball with more power. HoverCar association also uses orbs that when touched, enables players to go faster for a short amount of time with the press of a button.
 
-To implement this, a BoostManager script has been created. The script is responsible for handling the boost 
+To implement this, a BoostManager script has been created. The script is responsible for deactivating and reactivating the orbs when colliding with the car in question and handling the car's boost tank by decreasing it by one after each frame that is activated. The script also updates the UI text indicating the boost gauge.
+
+As a result, the car movement is manipulated by the player's input, the physics engine and the boost manager.
 
 ` m_body.AddForce(transform.forward * m_currThrust * m_boost);`
 
@@ -44,5 +45,3 @@ To implement this, a BoostManager script has been created. The script is respons
 ## Game modes ##
 The game consists of two game modes: 1 or 2 players.
 The 2 players mode is a local competitive multiplayer using a splitscreen. Both players handle their cars using the keyboard and are trying to score as many goals as they can to the opposing team before the time runs out.
-
-### What Did I learn? ###
