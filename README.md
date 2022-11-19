@@ -11,6 +11,7 @@ https://youtu.be/dJGiz-4q9ys
 ## Contents ##
 
 * Gameplay mechanics
+*   Acceleration and Turning
 * Game Modes
 
 ## Gameplay mechanics ##
@@ -43,8 +44,9 @@ To implement this, a BoostManager script has been created. The script is respons
 
 As a result, the car movement is manipulated by the player's input, the physics engine and the boost manager.
 
-` m_body.AddForce(transform.forward * m_currThrust * m_boost);`
-
+```c#
+m_body.AddForce(transform.forward * m_currThrust * m_boost);
+```
 
 ## Game modes ##
 The game consists of two game modes: 1 or 2 players.
