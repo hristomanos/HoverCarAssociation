@@ -31,7 +31,9 @@ To turn the car, a similar method to AddForce() is applied. This time, the force
 
 Player input is processed by invoking Unity's function Input.GetAxis() which returns a value of the virtual axis. The returned value is in the range -1...+1 and foes realy on frame frequency. This means that when no button has been pressed, the function returns 0.0f and when the "move forward/backward" button is pressed, the function returns 1.0f/-1.0f respectively. Once we know which button was pressed, we can multiply it by the velocity to make the hoverring car move based on the player's input.
 
-`m_body.AddForce(transform.forward * m_currThrust);`
+```c#
+m_body.AddForce(transform.forward * m_currThrust);
+```
 
 ### Boost ###
 
