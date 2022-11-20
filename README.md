@@ -12,7 +12,7 @@ https://youtu.be/dJGiz-4q9ys
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=dJGiz-4q9ys&ab_channel=ChristomanosAnastasiou
 " target="_blank"><img src="http://img.youtube.com/vi/dJGiz-4q9ys/0.jpg" 
-alt="Raycast" width="240" height="180" border="10" /></a>
+alt="Raycast" width="480" height="180" border="10" /></a>
 
 ## Gameplay mechanics ##
 
