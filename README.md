@@ -24,7 +24,11 @@ To accelerate the car, we can add a certain force to the car's rigidbody. To do 
 ```C#
 m_rigidBody.AddForce(transform.forward * m_speed);
 ```
-To turn the car, a similar method to AddForce() is applied. This time, the force adds torque to the car's rigidbody. AddTorque() works by rotating the car around its Y axis, thus changing its direction. For example: `m_rigidBody.AddTorque(Vector3.up * m_turnStrength);`
+To turn the car, a similar method to AddForce() is applied. This time, the force adds torque to the car's rigidbody. AddTorque() works by rotating the car around its Y axis, thus changing its direction. 
+
+```C#
+m_rigidBody.AddTorque(Vector3.up * m_turnStrength);
+```
 
 #### Input ####
 
