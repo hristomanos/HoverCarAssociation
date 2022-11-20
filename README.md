@@ -19,8 +19,11 @@ To achieve this, I am performing a ground check through raycasting. Four rays th
 ![ScreenShot](https://github.com/hristomanos/HoverCarAssociation/blob/master/HoverCar2.png)
 
 ### Acceleration and turning ###
-To accelerate the car, we can add a certain force to the car's rigidbody. To do this, we will need a vector to dictate direction and a float value to determine the speed. The product of those two returns the car's velocity. For example: `m_rigidBody.AddForce(transform.forward * m_speed);` 
+To accelerate the car, we can add a certain force to the car's rigidbody. To do this, we will need a vector to dictate direction and a float value to determine the speed. The product of those two returns the car's velocity. 
 
+```C#
+m_rigidBody.AddForce(transform.forward * m_speed);
+```
 To turn the car, a similar method to AddForce() is applied. This time, the force adds torque to the car's rigidbody. AddTorque() works by rotating the car around its Y axis, thus changing its direction. For example: `m_rigidBody.AddTorque(Vector3.up * m_turnStrength);`
 
 #### Input ####
@@ -28,7 +31,7 @@ To turn the car, a similar method to AddForce() is applied. This time, the force
 Player input is processed by invoking Unity's function Input.GetAxis() which returns a value of the virtual axis. The returned value is in the range -1...+1 and foes realy on frame frequency. This means that when no button has been pressed, the function returns 0.0f and when the "move forward/backward" button is pressed, the function returns 1.0f/-1.0f respectively. Once we know which button was pressed, we can multiply it by the velocity to make the hoverring car move based on the player's input.
 
 ```c#
-m_body.AddForce(transform.forward * m_currThrust);
+m_rigidBody.AddForce(transform.forward * m_currentThrust);
 ```
 
 #### Boost ####
@@ -40,7 +43,7 @@ To implement this, a BoostManager script has been created. The script is respons
 As a result, the car movement is manipulated by the player's input, the physics engine and the boost manager.
 
 ```c#
-m_body.AddForce(transform.forward * m_currThrust * m_boost);
+m_rigidBody.AddForce(transform.forward * m_currentThrust * m_boost);
 ```
 
 ## Game modes ##
