@@ -8,11 +8,6 @@ HoverCar Association is a 3D sports game inspired by - my favourite car football
 
 https://youtu.be/dJGiz-4q9ys
 
-## Contents ##
-
-* Gameplay mechanics
-*   Acceleration and Turning
-* Game Modes
 
 ## Gameplay mechanics ##
 
@@ -28,7 +23,7 @@ To accelerate the car, we can add a certain force to the car's rigidbody. To do 
 
 To turn the car, a similar method to AddForce() is applied. This time, the force adds torque to the car's rigidbody. AddTorque() works by rotating the car around its Y axis, thus changing its direction. For example: `m_rigidBody.AddTorque(Vector3.up * m_turnStrength);`
 
-### Input ###
+#### Input ####
 
 Player input is processed by invoking Unity's function Input.GetAxis() which returns a value of the virtual axis. The returned value is in the range -1...+1 and foes realy on frame frequency. This means that when no button has been pressed, the function returns 0.0f and when the "move forward/backward" button is pressed, the function returns 1.0f/-1.0f respectively. Once we know which button was pressed, we can multiply it by the velocity to make the hoverring car move based on the player's input.
 
@@ -36,7 +31,7 @@ Player input is processed by invoking Unity's function Input.GetAxis() which ret
 m_body.AddForce(transform.forward * m_currThrust);
 ```
 
-### Boost ###
+#### Boost ####
 
 Rocket league places orbs that fill the cars' boost tank close to the edges and corners of the pitch. The extra boost adds a tool that can be utlilised by players to chase or shoot the ball with more power. HoverCar association also uses orbs that when touched, enables players to go faster for a short amount of time with the press of a button.
 
