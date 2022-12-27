@@ -31,6 +31,14 @@ To turn the car, a similar method to AddForce() is applied. This time, the force
 m_rigidBody.AddTorque(Vector3.up * m_turnStrength);
 ```
 
+### Jumping ###
+
+Players are able to jump with a push of a button. An upward force is applied to the car's rigidbody once, making it jump in the air.
+
+```C#
+m_rigidBody.AddForce(0, upForce, 0, ForceMode.Impulse);
+```
+
 #### Input ####
 
 Player input is processed by invoking Unity's function Input.GetAxis() which returns a value of the virtual axis. The returned value is in the range -1...+1 reqardless of frame frequency. This means that when no button has been pressed, the function returns 0.0f and when the "move forward/backward" button has been pressed, the function returns 1.0f/-1.0f respectively. Once we know which button was pressed, we can multiply it by the velocity to make the hoverring car move based on the player's input.
@@ -52,5 +60,5 @@ m_rigidBody.AddForce(transform.forward * m_currentThrust * m_boost);
 ```
 
 ## Game modes ##
-The game consists of two game modes: 1 or 2 players.
-The 2 players mode is a local competitive multiplayer using a splitscreen. Both players handle their cars using the keyboard and are trying to score as many goals as they can to the opposing team before the time runs out.
+The game consists of two game modes: 1 or 2 players. 1 player is similar to free trainning where the player can practice the game's controls on a safe environemnt.
+The 2 players mode is a local competitive multiplayer using a splitscreen. Both players handle their cars using the keyboard and are trying to score as many goals as they can.
