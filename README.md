@@ -19,7 +19,7 @@ To achieve this, I am performing a ground check through raycasting. Four rays th
 
 ![ScreenShot](https://github.com/hristomanos/HoverCarAssociation/blob/master/HoverCar2.png)
 
-### Acceleration and turning ###
+#### Acceleration and turning ####
 To accelerate the car, we can add a certain force to the car's rigidbody. To do this, we will need a vector to dictate direction and a float value to determine the speed. The product of those two returns the car's velocity. 
 
 ```C#
@@ -31,7 +31,7 @@ To turn the car, a similar method to AddForce() is applied. This time, the force
 m_rigidBody.AddTorque(Vector3.up * m_turnStrength);
 ```
 
-### Jumping ###
+#### Jumping ####
 
 Players are able to jump with a push of a button. An upward force is applied to the car's rigidbody once, making it jump in the air.
 
