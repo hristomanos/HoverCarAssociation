@@ -1,5 +1,6 @@
 # HoverCar Association #
 
+<p align="Justify">
 ## Introduction ##
 HoverCar Association is a 3D sports game inspired by - my favourite car football game - Rocket league. It is a solo side project made in three weeks with Unity and C#. It was first used for experimentation of Unity's tools including scripting, physics, local multiplayer, importing 3D objects, UI, Text animation, Main and Pause menus and sound.
 
@@ -62,3 +63,5 @@ m_rigidBody.AddForce(transform.forward * m_currentThrust * m_boost);
 ## Game modes ##
 The game consists of two game modes: 1 or 2 players. 1 player is similar to free trainning where the player can practice the game's controls on a safe environemnt.
 The 2 players mode is a local competitive multiplayer using a splitscreen. Both players handle their cars using the keyboard and are trying to score as many goals as they can.
+
+</p>
