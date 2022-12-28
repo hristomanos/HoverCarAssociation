@@ -13,9 +13,11 @@ https://youtu.be/dJGiz-4q9ys
 
 ## Gameplay mechanics ##
 
-<p align="Justify">
+
 
 ### Car handling ###
+
+<p align="Justify">
 The most challenging part of the implementation was the car handling. I started by downloading Unity's Standard assets that included a car. The default car settings were set up to create a more realistic experience including a long list of variables that affected the car physics. Since Rocket league is more arcadey, it is very important for the player to maintain control of the car at all times, therefore a realistic car that would spin around at each turn would make the gameplay experience more frustrating. So in pursuit of making the car handling feel more arcadey, I made the practical choice of removing the default wheels altogether and just hover the cars above the ground. With this method I am able to control the car's velocity and torque. 
 </p>
 To achieve this, I am performing a ground check through raycasting. Four rays that point towards the ground replace the wheels. To keep the cars above the ground, an upward force is applied separately at each corner of the car. Each force is applied when the ground check returns true.
