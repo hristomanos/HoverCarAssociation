@@ -84,8 +84,14 @@ m_rigidBody.AddForce(transform.forward * m_currentThrust * m_boost);
 
 ## Game modes ##
 <p align="Justify">
-The game consists of two game modes: 1 or 2 players. 1 player is similar to free trainning where the player can practice the game's controls on a safe environemnt.
+The game consists of two game modes: 1 or 2 players. 
+
+### 1 Player ###
+1 player is similar to free trainning where the player can practice the game's controls on a safe environemnt.
+
+### 2 Players ###
 The 2 players mode is a local competitive multiplayer using a splitscreen. Both players handle their cars using the keyboard and are trying to score as many goals as they can.
-</p>
+
+#### Splitscreen ####
 
 
