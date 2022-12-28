@@ -94,4 +94,4 @@ The 2 players mode is a local competitive multiplayer using a splitscreen. Both 
 
 #### Splitscreen ####
 
- Unity's cameras contain a property that defines the size and position of their viewport rectangle. The viewport is in rendering-device-specific coordinates ie. pixels in screen coordinates and is used to limit the area that is currently being rendered on screen. I was fascinated with how quickly I was able to make a two player game mode.
+ Unity's virtual cameras contain a property that defines the size and position of their viewport rectangle. The viewport is in rendering-device-specific coordinates ie. pixels in screen coordinates and is used to limit the area that is currently being rendered on screen. I was fascinated with how quickly I was able to make a two player game mode.
