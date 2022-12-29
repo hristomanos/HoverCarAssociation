@@ -1,5 +1,17 @@
 # HoverCar Association #
 
+## Brief ##
+
+* Developed in three weeks
+* C#
+* Splitscreen
+* Cars are hovering using raycasts
+* Cars move based on their rigidbody velocity and torque
+* Ball has a physic material to behave like a ball
+* Boost orbs provide speed boost to players
+* UI animation for countdown
+* One of my first games when learning about the Unity game engine
+
 
 ## Introduction ##
 <p align="Justify">
@@ -95,3 +107,16 @@ The 2 players mode is a local competitive multiplayer using a splitscreen. Both 
 #### Splitscreen ####
 
  Unity's virtual cameras contain a property that defines the size and position of their viewport rectangle. The viewport is in rendering-device-specific coordinates i.e. pixels in screen-space coordinates and is used to limit the area that is currently being rendered on screen. I was fascinated with how quickly I was able to make a two player game mode.
+
+### Controllers ###
+Managers and controllers are empty game objects that are responsible for handling aspects of the game that are not tied to a specific game object and are persistent throught the game. These cases may include playing audio, changing scenes, keeping the player's state and rendering the UI.
+  
+In HoverCar Association, managers deal with the following cases:
+  
+  * Changing scenes from the Main menu to either of the two game modes
+  * Counting down before the start of the game and updating the UI
+  * Keeping score and updating the UI
+  * Resetting the ball and player positions when a goal has been scored
+  * Detecting if a goal was scored
+  * Handling player boost
+  
