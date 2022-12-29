@@ -3,7 +3,7 @@
 # Brief #
 * Developed in three weeks
 * C#
-* Splitscreen
+* 2 player local co-op with splitscreen
 * Cars are hovering using raycasts
 
 
