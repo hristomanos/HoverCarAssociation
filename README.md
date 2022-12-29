@@ -1,10 +1,10 @@
 # HoverCar Association #
 
 # Brief #
-* Developed in three weeks.
-* C#.
-* Splitscreen.
-* Cars are hovering using raycasts.
+* Developed in three weeks
+* C#
+* Splitscreen
+* Cars are hovering using raycasts
 
 
 ## Introduction ##
