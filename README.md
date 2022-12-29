@@ -84,6 +84,9 @@ To implement this, a BoostManager script has been created. The script is respons
 As a result, the car movement is manipulated by the player's input, the physics engine and the boost manager.
 </p>
 
+![ScreenShot](https://github.com/hristomanos/HoverCarAssociation/blob/master/orb.png)
+
+
 ```c#
 m_rigidBody.AddForce(transform.forward * m_currentThrust * m_boost);
 ```
