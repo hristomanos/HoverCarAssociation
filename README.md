@@ -2,6 +2,7 @@
 
 # Brief #
 * Developed in three weeks
+* Unity 2018.2.10f
 * C#
 * 2 player local co-op with splitscreen
 * Cars are hovering using raycasts
