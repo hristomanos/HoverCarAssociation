@@ -107,7 +107,7 @@ Managers and controllers are empty game objects that are responsible for handlin
   
 In HoverCar Association, managers deal with the following cases:
   
-  * Changing scenes from the Main menu to either of the two game modes
+  * Changing scenes from the main menu to either of the two game modes
   * Counting down before the start of the game and updating the UI
   * Keeping score and updating the UI
   * Resetting the ball and player positions when a goal has been scored
