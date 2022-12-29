@@ -1,16 +1,9 @@
 # HoverCar Association #
 
-## Brief ##
-
 * Developed in three weeks
 * C#
 * Splitscreen
 * Cars are hovering using raycasts
-* Cars move based on their rigidbody velocity and torque
-* Ball has a physic material to behave like a ball
-* Boost orbs provide speed boost to players
-* UI animation for countdown
-* One of my first games when learning about the Unity game engine
 
 
 ## Introduction ##
