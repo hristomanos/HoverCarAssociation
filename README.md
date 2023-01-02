@@ -15,7 +15,7 @@ HoverCar Association is a 3D sports game inspired by - my favourite car football
 
 ## Gameplay video ##
 
-[![Raycast](http://img.youtube.com/vi/ubPr9XzjK8Q/0.jpg)](http://www.youtube.com/watch?v=dJGiz-4q9ys&ab_channel=ChristomanosAnastasiou)
+[![Raycast](http://img.youtube.com/vi/dJGiz-4q9ys/0.jpg)](http://www.youtube.com/watch?v=dJGiz-4q9ys&ab_channel=ChristomanosAnastasiou)
 
 ## Gameplay mechanics ##
 
