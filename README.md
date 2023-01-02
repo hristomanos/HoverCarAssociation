@@ -1,6 +1,6 @@
 # HoverCar Association #
 
-# Brief #
+# Summary
 * Developed in three weeks
 * Unity 2018.2.10f
 * C#
