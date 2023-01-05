@@ -79,8 +79,6 @@ Rocket league uses orbs that fill the cars' boost tank and are placed close to t
 To implement this, a BoostManager script has been created. The script is responsible for deactivating and reactivating the orbs when colliding with the car in question and handling the car's boost tank by decreasing it by one after each frame that is activated. The script also updates the UI text indicating the boost gauge.
 </p>
 
-![ScreenShot](https://github.com/hristomanos/HoverCarAssociation/blob/master/orb.png)
-
 <p align="Justify">
 As a result, the car movement is manipulated by the player's input, the physics engine and the boost manager.
 </p>
@@ -88,6 +86,8 @@ As a result, the car movement is manipulated by the player's input, the physics 
 ```c#
 m_rigidBody.AddForce(transform.forward * m_currentThrust * m_boost);
 ```
+
+![ScreenShot](https://github.com/hristomanos/HoverCarAssociation/blob/master/orb.png)
 
 ## Game modes ##
 <p align="Justify">
