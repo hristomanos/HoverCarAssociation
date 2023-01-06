@@ -1,7 +1,8 @@
 # HoverCar Association #
 
 # Summary
-* Developed in three weeks
+* Solo project
+* Sports game developed in three weeks
 * Unity 2018.2.10f
 * C#
 * 2 player local co-op with splitscreen
